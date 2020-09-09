@@ -1,5 +1,5 @@
 def getToDo (start, todos):
-    if (len(todos[start]) == 0):
+    if (start not in todos or len(todos[start]) == 0):
         return [start]
     elif (len(todos[start]) >= 1):
         list = [start]
